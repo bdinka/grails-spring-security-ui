@@ -7,13 +7,14 @@ grails.project.dependency.resolution = {
 	log 'warn'
 
 	repositories {
+
+        mavenLocal()
+        mavenCentral()
+        mavenRepo 'http://aggron:8081/artifactory/repo'
+
 		grailsPlugins()
 		grailsHome()
 		grailsCentral()
-
-		mavenLocal()
-		mavenCentral()
-		mavenRepo 'http://download.java.net/maven/2/'
 	}
 
 //	plugins {
